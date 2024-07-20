@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zoom on Hover</title>
+    <style>
+        .hero-section-right {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-right-inner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner-img {
+            width: 546px;
+            height: 560px;
+            padding-top: 20px;
+            will-change: transform;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-right-inner:hover .hero-banner-img {
+            will-change: transform;
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-section-right">
+        <div class="hero-right-inner">
+            <img class="hero-banner-img" src="./ASSETS/home-font.png" alt="Banner Image">
+        </div>
+    </div>
+</body>
+
+</html>
