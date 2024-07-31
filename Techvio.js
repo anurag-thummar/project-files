@@ -12,3 +12,44 @@ window.onscroll = function() {
         button.style.display = 'none';
     }
 };
+
+
+
+  
+
+
+document.getElementById('support-btn').addEventListener('click', function() {
+    var header = document.querySelector('.home-page__header');
+    var heroSection = document.getElementById('hero-section');
+    var heroSection1 = document.getElementById('hero-section1');
+    
+    header.classList.toggle('alternative-theme');
+    
+    if (heroSection.style.display === 'none') {
+        heroSection.style.display = 'block';
+        heroSection1.style.display = 'none';
+    } else {
+        heroSection.style.display = 'none';
+        heroSection1.style.display = 'block';
+    }
+});
+
+
+
+
+
+
+
+
+
+{/* <div class="creative-shape-div">
+            <img class="bottom-creative-shape" src="./ASSETS/home-bottom-shape.png" />
+          </div>
+
+          <div class="color-div">
+
+          </div>
+          particles.js container
+          
+
+          particles.js lib - https://github.com/VincentGarreau/particles.js */}
